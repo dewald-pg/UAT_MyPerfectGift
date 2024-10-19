@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Landing Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <main>
+        <div class="landing-full-wrapper">
+            <div class="landing-wrapper">
+                <h1 class="subject">Gifting Just Got A Lot Easier</h1>
+                <div class="icons-container">
+                    <div class="icon-item" onmouseover="showDescription(1)" onmouseout="hideDescription(1)">
+                        <img src="~/Images/icon-placeholder_img.png" alt="Occasion - Icon" />
+                        <div class="icon-text">SHOP BY OCCASION</div>
+                    </div>
+                    <div class="icon-item" onmouseover="showDescription(2)" onmouseout="hideDescription(2)">
+                        <img src="~/Images/icon-placeholder_img.png" alt="Create Your Own - Icon" />
+                        <div class="icon-text">CREATE YOUR OWN</div>
+                    </div>
+                    <div class="icon-item" onmouseover="showDescription(3)" onmouseout="hideDescription(3)">
+                        <img src="~/Images/icon-placeholder_img.png" alt="Gifting Guideline - Icon" />
+                        <div class="icon-text">GIFTING GUIDELINE</div>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-s">
+                            <div class="description-text" id="landing-description-icon-1">
+                                <br />
+                                Header Text
+                                <br /><br />
+                                This is showing dynamic text based on icon 1 selected.
+                            </div>
+                            <div class="description-text" id="landing-description-icon-2">
+                                <br />
+                                Header Text
+                                <br /><br />
+                                This is showing dynamic text based on icon 2 selected.
+                            </div>
+                            <div class="description-text" id="landing-description-icon-3">
+                                <br />
+                                Header Text
+                                <br /><br />
+                                This is showing dynamic text based on icon 3 selected.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

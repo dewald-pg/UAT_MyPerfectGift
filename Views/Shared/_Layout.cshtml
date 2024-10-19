@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="desktop-navbar">
+        <nav class="navbar-container">
+            <ul class="navbar-list">
+                <!-- Left Aligned - Our Story -->
+                <li class="navbar-item nav-our-story">
+                    <a href="/OurStory">Our Story</a>
+                </li>
+
+                <!-- Centered Logo -->
+                <li class="navbar-item nav-logo">
+                    <div class="nav-logo-wrapper">
+                        <div>Logo Here</div>
+                    </div>
+                </li>
+
+                <!-- Center Aligned Right Section - Search, Login, Cart -->
+                <li class="navbar-item nav-right-items">
+                    <input type="text" placeholder="Search..." class="nav-search-bar" />
+                    <span class="user-icon">👤</span>
+                    <a href="/Login" class="login-link">Log In</a>
+                    <a href="/Basket" class="cart-link">🛒</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Perfect Gift</p>
+    </footer>
+</body>
+</html>
